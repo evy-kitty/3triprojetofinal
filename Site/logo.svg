@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="84" viewBox="0 0 320 84" role="img" aria-label="Brinca Mundo — Brinquedos e Utilidades">
+  <defs>
+    <linearGradient id="brincaFundo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff8fc0" />
+      <stop offset="55%" stop-color="#c9a6ff" />
+      <stop offset="100%" stop-color="#7ed8c4" />
+    </linearGradient>
+    <linearGradient id="brincaTexto" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff5fa2" />
+      <stop offset="100%" stop-color="#8d5fe0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Ícone: carinha de ursinho -->
+  <rect x="6" y="8" width="68" height="68" rx="24" fill="url(#brincaFundo)" />
+  <circle cx="22" cy="27" r="12" fill="#ffd3e5" />
+  <circle cx="58" cy="27" r="12" fill="#ffd3e5" />
+  <circle cx="22" cy="27" r="6.5" fill="#ff9dc5" />
+  <circle cx="58" cy="27" r="6.5" fill="#ff9dc5" />
+  <ellipse cx="40" cy="45" rx="23" ry="21" fill="#fff8fc" />
+  <circle cx="32" cy="41" r="3.2" fill="#543a63" />
+  <circle cx="48" cy="41" r="3.2" fill="#543a63" />
+  <ellipse cx="40" cy="51" rx="9" ry="7" fill="#ffd3e5" />
+  <ellipse cx="40" cy="49" rx="4" ry="3" fill="#543a63" />
+  <path d="M40 52v3M40 55c-1.8 2.4-4.2 2.4-6 0M40 55c1.8 2.4 4.2 2.4 6 0" stroke="#543a63" stroke-width="2" stroke-linecap="round" fill="none" />
+  <circle cx="26" cy="50" r="3.6" fill="#ffb3d2" opacity="0.85" />
+  <circle cx="54" cy="50" r="3.6" fill="#ffb3d2" opacity="0.85" />
+
+  <!-- Nome da loja -->
+  <text x="88" y="38" font-family="'Fredoka', 'Trebuchet MS', Verdana, sans-serif" font-size="27" font-weight="700" fill="url(#brincaTexto)">Brinca Mundo</text>
+  <text x="89" y="61" font-family="'Nunito', 'Trebuchet MS', Verdana, sans-serif" font-size="9.5" font-weight="800" letter-spacing="1.9" fill="#a5688f">BRINQUEDOS &amp; UTILIDADES</text>
+</svg>
