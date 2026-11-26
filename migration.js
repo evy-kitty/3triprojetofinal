@@ -7,11 +7,11 @@ nome varchar(50) NOT NULL,
 cpf char(14) NOT NULL,
 celular char(14) NOT NULL,
 email varchar(50) NOT NULL,
-senha varchar(512) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+senha varchar(512) NOT NULL,
 PRIMARY KEY (id),
 UNIQUE KEY cpf (cpf),
 UNIQUE KEY email (email)
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;`
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4;`
 
 const DADOS_CLIENTE = `
 INSERT INTO cliente VALUES 
@@ -28,7 +28,7 @@ INSERT INTO cliente VALUES
     caminho_img varchar(255) DEFAULT NULL,
     quantidade_img int NOT NULL,
     PRIMARY KEY (id)
-  ) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;`
+  ) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8mb4;`
 
   const DADOS_PRODUTO = `
     INSERT INTO produto VALUES
@@ -44,7 +44,7 @@ INSERT INTO cliente VALUES
      PRIMARY KEY (id),
      KEY idCliente (idCliente),
      CONSTRAINT compra_ibfk_1 FOREIGN KEY (idCliente) REFERENCES cliente (id)
-   ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;`
+   ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;`
 
    const ESTRUTURA_PRODUTOCOMPRA = `
    CREATE TABLE IF NOT EXISTS produtocompra (
@@ -56,7 +56,7 @@ INSERT INTO cliente VALUES
      KEY idcompra (idcompra),
      CONSTRAINT produtocompra_ibfk_1 FOREIGN KEY (idproduto) REFERENCES produto (id),
      CONSTRAINT produtocompra_ibfk_2 FOREIGN KEY (idcompra) REFERENCES compra (id)
-   ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;`
+   ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;`
 
   async function criar_tabelas() {
     const connection = await db.pool.getConnection();
